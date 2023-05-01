@@ -1,0 +1,146 @@
+{
+  "nodes": [
+  {
+      "key": "computational genomics",
+      "label": "Computational genomics",
+      "tag": "Field",
+      "URL": "https://en.wikipedia.org/wiki/Computational%20genomics",
+      "cluster": "15",
+      "x": 789.8463745117188,
+      "y": -686.1704711914062,
+      "score": 0.001318911368599122
+    },
+	{
+      "key": "graph (discrete mathematics)",
+      "label": "Graph (discrete mathematics)",
+      "tag": "Method",
+      "URL": "https://en.wikipedia.org/wiki/Graph%20%28discrete%20mathematics%29",
+      "cluster": "0",
+      "x": 77.01103973388672,
+      "y": -580.4057006835938,
+      "score": 0.0013833863016234334
+    },
+	
+	{
+      "key": "metabolic network modelling",
+      "label": "Metabolic network modelling",
+      "tag": "unknown",
+      "URL": "https://en.wikipedia.org/wiki/Metabolic%20network%20modelling",
+      "cluster": "15",
+      "x": 977.7194213867188,
+      "y": -752.108154296875,
+      "score": 0.000730385783048051
+    },
+	{
+      "key": "graph drawing",
+      "label": "Graph drawing",
+      "tag": "Chart type",
+      "URL": "https://en.wikipedia.org/wiki/Graph%20drawing",
+      "cluster": "0",
+      "x": 338.7585144042969,
+      "y": -795.7013549804688,
+      "score": 0
+    },
+	{
+      "key": "gephi",
+      "label": "Gephi",
+      "tag": "Tool",
+      "URL": "https://en.wikipedia.org/wiki/Gephi",
+      "cluster": "0",
+      "x": 343.4423828125,
+      "y": -749.0428466796875,
+      "score": 0.0010242079745792347
+    },
+	{
+      "key": "graph (data structure)",
+      "label": "Graph (data structure)",
+      "tag": "Concept",
+      "URL": "https://en.wikipedia.org/wiki/Graph%20%28data%20structure%29",
+      "cluster": "0",
+      "x": 8.46218204498291,
+      "y": -760.5272216796875,
+      "score": 0.00012777254849138906
+    },
+	{
+      "key": "graph theory",
+      "label": "Graph theory",
+      "tag": "Field",
+      "URL": "https://en.wikipedia.org/wiki/Graph%20theory",
+      "cluster": "0",
+      "x": 144.78919982910156,
+      "y": -839.4916381835938,
+      "score": 0.000377687709942383
+    },
+	{
+      "key": "protein–protein interaction prediction",
+      "label": "Protein–protein interaction prediction",
+      "tag": "Concept",
+      "URL": "https://en.wikipedia.org/wiki/Protein%E2%80%93protein%20interaction%20prediction",
+      "cluster": "15",
+      "x": 1004.7494506835938,
+      "y": -691.8551635742188,
+      "score": 0.0009310674964097654
+    },
+	
+	{
+      "key": "cytoscape",
+      "label": "Cytoscape",
+      "tag": "Tool",
+      "URL": "https://en.wikipedia.org/wiki/Cytoscape",
+      "cluster": "0",
+      "x": 643.82275390625,
+      "y": -770.3126220703125,
+      "score": 0.00006909602204225056
+    }
+    
+  ],
+  "edges": [
+    ["cytoscape", "computational genomics"],
+    ["cytoscape", "metabolic network modelling"],
+    ["cytoscape", "protein–protein interaction prediction"],
+    ["cytoscape", "graph drawing"],
+    ["gephi", "graph (discrete mathematics)"],
+    ["gephi", "graph drawing"],
+    ["gephi", "graph theory"],
+    ["gephi", "graph (data structure)"]
+  ],
+  "clusters": [
+    { "key": "0", "color": "#6c3e81", "clusterLabel": "Graph theory" },
+    { "key": "1", "color": "#666666", "clusterLabel": "Spreadsheets" },
+    { "key": "3", "color": "#57a835", "clusterLabel": "Logic of information" },
+    { "key": "4", "color": "#7145cd", "clusterLabel": "Trees and data structures" },
+    { "key": "5", "color": "#579f5f", "clusterLabel": "Business intelligence" },
+    { "key": "6", "color": "#d043c4", "clusterLabel": "Exploratory data analysis" },
+    { "key": "7", "color": "#477028", "clusterLabel": "Softwares and data mining" },
+    { "key": "8", "color": "#b174cb", "clusterLabel": "Project management" },
+    { "key": "10", "color": "#a4923a", "clusterLabel": "Engineering" },
+    { "key": "11", "color": "#5f83cc", "clusterLabel": "Semantic networks" },
+    { "key": "12", "color": "#666666", "clusterLabel": "Sociometry" },
+    { "key": "13", "color": "#666666", "clusterLabel": "Ideas and concepts" },
+    { "key": "14", "color": "#db4139", "clusterLabel": "Arguments / Logic" },
+    { "key": "15", "color": "#379982", "clusterLabel": "Scientific classification" },
+    { "key": "16", "color": "#666666", "clusterLabel": "Decision trees" },
+    { "key": "17", "color": "#666666", "clusterLabel": "Motion perception" },
+    { "key": "18", "color": "#c94c83", "clusterLabel": "Artificial intelligence" },
+    { "key": "19", "color": "#666666", "clusterLabel": "Linguistics" },
+    { "key": "20", "color": "#7c5d28", "clusterLabel": "Collaborative problem solving" },
+    { "key": "21", "color": "#a54a49", "clusterLabel": "Knowledge management" },
+    { "key": "22", "color": "#666666", "clusterLabel": "Clinical terms and technologies" },
+    { "key": "23", "color": "#cf7435", "clusterLabel": "Network Science" },
+    { "key": "25", "color": "#666666", "clusterLabel": "Knots" },
+    { "key": "24", "color": "#666666", "clusterLabel": "Tensors (mathematics)" }
+  ],
+  "tags": [
+    { "key": "Chart type", "image": "charttype.svg" },
+    { "key": "Company", "image": "company.svg" },
+    { "key": "Concept", "image": "concept.svg" },
+    { "key": "Field", "image": "field.svg" },
+    { "key": "List", "image": "list.svg" },
+    { "key": "Method", "image": "method.svg" },
+    { "key": "Organization", "image": "organization.svg" },
+    { "key": "Person", "image": "person.svg" },
+    { "key": "Technology", "image": "technology.svg" },
+    { "key": "Tool", "image": "tool.svg" },
+    { "key": "unknown", "image": "unknown.svg" }
+  ]
+}
