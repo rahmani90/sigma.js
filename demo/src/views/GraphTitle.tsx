@@ -26,14 +26,14 @@ const GraphTitle: FC<{ filters: FiltersState }> = ({ filters }) => {
 
   return (
     <div className="graph-title">
-      <h1>A cartography of Wikipedia pages around data visualization</h1>
+      <h1>گراف مفاهیم مالی اسلامی</h1>
       <h2>
         <i>
-          {graph.order} node{graph.order > 1 ? "s" : ""}{" "}
+          {graph.order} گره {graph.order > 1 ? "s" : ""}{" "}
           {visibleItems.nodes !== graph.order
             ? ` (only ${prettyPercentage(visibleItems.nodes / graph.order)} visible)`
             : ""}
-          , {graph.size} edge
+          , {graph.size} یال
           {graph.size > 1 ? "s" : ""}{" "}
           {visibleItems.edges !== graph.size
             ? ` (only ${prettyPercentage(visibleItems.edges / graph.size)} visible)`

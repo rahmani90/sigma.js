@@ -81,7 +81,7 @@ const SearchField: FC<{ filters: FiltersState }> = ({ filters }) => {
     <div className="search-wrapper">
       <input
         type="search"
-        placeholder="Search in nodes..."
+        placeholder="جستجو کنید..."
         list="nodes"
         value={search}
         onChange={onInputChange}
