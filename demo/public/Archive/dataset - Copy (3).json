@@ -1,0 +1,24 @@
+{
+  "nodes": [
+  {
+      "key": "'مباني، اصول و مفاهيم بازار سرمايه اسلامي'",
+      "label": "مباني، اصول و مفاهيم بازار سرمايه اسلامي",
+      "tag": "مالی",
+      "URL": "https://en.wikipedia.org/wiki/Protein%E2%80%93protein%20interaction%20prediction",
+      "cluster": "15",
+      "x": 1004.7494506835938,
+      "y": -691.8551635742188,
+      "score": 1
+    }
+  ],
+  "edges": [
+    
+  ],
+  "clusters": [
+	{"key": "15", "color": "#6c3e81", "clusterLabel": "مالی" }
+  ],
+  "tags": [
+    {"key": "مالی", "image": "charttype.svg" }
+    
+  ]
+}
