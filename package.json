@@ -54,6 +54,7 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "@react-sigma/layout-core": "^3.4.0",
     "@yomguithereal/helpers": "^1.1.1",
     "events": "^3.3.0",
     "graphology-utils": "^2.5.0"
