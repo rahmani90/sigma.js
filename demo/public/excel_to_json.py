@@ -1,6 +1,7 @@
 import random
 import pandas as pd
 import hazm
+import networkx as nx
 norm = hazm.Normalizer()
 excel_file = 'data.xlsx'
 
@@ -10,6 +11,19 @@ edges = df_edges.values.tolist()
 df_nodes = pd.read_excel(excel_file, sheet_name=1, header=0)
 df_nodes['cluster'] = df_nodes['cluster'].apply(str)
 nodes = df_nodes.to_dict('records')
+
+
+G=nx.from_pandas_edgelist(df_edges, 'source', 'destination')
+pos = nx.fruchterman_reingold_layout(G)
+#pos = nx.circular_layout(G)
+#pos = nx.random_layout(G)
+#pos = nx.spectral_layout(G)
+#pos = nx.spring_layout(G)
+for key, position in pos.items():
+    for dic in nodes:
+        if dic['key'] == key:
+                dic['x']= list(position)[0]
+                dic['y']= list(position)[1]
 
 clusters_key=[]
 clusters = ""
