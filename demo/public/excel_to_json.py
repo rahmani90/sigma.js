@@ -26,7 +26,7 @@ for key, position in pos.items():
                 dic['x']= list(position)[0]
                 dic['y']= list(position)[1]
                 dic['score']= G.degree()[key]
-                print(G.degree()[key])
+                
 
 clusters_key=[]
 clusters = ""
