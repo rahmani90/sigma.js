@@ -47,7 +47,8 @@ json_str = """{
   "edges": """ + str(edges) + """  ,
   "clusters": [ """+clusters+""" ],
   "tags": [
-    {"key": "مالی", "image": "charttype.svg" }
+    {"key": "مالی", "image": "charttype.svg" },
+    {"key": "مالی اسلامی", "image": "concept.svg" }
     
   ]
 }"""
