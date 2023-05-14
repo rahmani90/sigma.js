@@ -2,6 +2,7 @@ import random
 import pandas as pd
 import hazm
 import networkx as nx
+import random
 norm = hazm.Normalizer()
 excel_file = 'data.xlsx'
 
@@ -24,6 +25,8 @@ for key, position in pos.items():
         if dic['key'] == key:
                 dic['x']= list(position)[0]
                 dic['y']= list(position)[1]
+                dic['score']= G.degree()[key]
+                print(G.degree()[key])
 
 clusters_key=[]
 clusters = ""
