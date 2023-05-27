@@ -2,6 +2,8 @@ import random
 import pandas as pd
 import hazm
 import networkx as nx
+import random
+
 norm = hazm.Normalizer()
 excel_file = 'data.xlsx'
 
@@ -25,6 +27,10 @@ for key, position in pos.items():
                 dic['x']= list(position)[0]
                 dic['y']= list(position)[1]
 
+                dic['score']= G.degree()[key]
+                
+
+
 clusters_key=[]
 clusters = ""
 random.seed(2)
@@ -44,7 +50,8 @@ json_str = """{
   "edges": """ + str(edges) + """  ,
   "clusters": [ """+clusters+""" ],
   "tags": [
-    {"key": "مالی", "image": "charttype.svg" }
+    {"key": "مالی", "image": "charttype.svg" },
+    {"key": "مالی اسلامی", "image": "concept.svg" }
     
   ]
 }"""
