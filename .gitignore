@@ -29,3 +29,6 @@ dist
 /website/docs
 /website/examples
 /www
+demo/public/data.xlsx
+demo/public/dataset.json
+demo/public/data.xlsx
