@@ -32,3 +32,6 @@ dist
 demo/public/data.xlsx
 demo/public/dataset.json
 demo/public/data.xlsx
+*.xlsx
+*.xlsx
+*.json
