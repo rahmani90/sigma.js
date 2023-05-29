@@ -8,6 +8,10 @@ norm = hazm.Normalizer()
 excel_file = 'data.xlsx'
 
 df_edges = pd.read_excel(excel_file, sheet_name=0, header=0)
+for i in range(len(df_edges)):
+    df_edges.iloc[i]['source'] = norm.normalize(df_edges.iloc[i]['source']).replace('\u200c', ' ').strip()
+    df_edges.iloc[i]['destination'] = norm.normalize(df_edges.iloc[i]['destination']).replace('\u200c', ' ').strip()
+
 edges = []#df_edges.values.tolist()
 for item in df_edges.values.tolist():
     edges.append([norm.normalize(item[0]).replace('\u200c', ' ').strip(), norm.normalize(item[1]).replace('\u200c', ' ').strip()])
@@ -34,9 +38,12 @@ for key, position in pos.items():
         if dic['key'] == key:
                 dic['x']= list(position)[0]
                 dic['y']= list(position)[1]
-
                 dic['score']= G.degree()[key]
-                
+                print(key)
+        elif 'ابزارها' in key and 'ابزارها' in dic['key']:
+            #print('[', "'", key, "'", ",", "'", dic['key'],"'", "]")
+            pass
+
 
 
 clusters_key=[]
