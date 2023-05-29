@@ -8,11 +8,19 @@ excel_file = 'data.xlsx'
 
 df_edges = pd.read_excel(excel_file, sheet_name=0, header=0)
 edges = df_edges.values.tolist()
+'''for item in df_edges.values.tolist():
+    edges.append([norm.normalize(item[0]).replace('\u200c', ' ').strip(), norm.normalize(item[1]).replace('\u200c', ' ').strip()])
+''' 
 
 df_nodes = pd.read_excel(excel_file, sheet_name=1, header=0)
 df_nodes['cluster'] = df_nodes['cluster'].apply(str)
 nodes = df_nodes.to_dict('records')
-
+'''
+for i in range(len(nodes)):
+	nodes[i]['key'] = norm.normalize(nodes[i]['key']).replace('\u200c', ' ').strip()
+	nodes[i]['label'] = norm.normalize(nodes[i]['label']).replace('\u200c', ' ').strip()
+	nodes[i]['tag'] = norm.normalize(nodes[i]['tag']).replace('\u200c', ' ').strip()
+'''
 
 G=nx.from_pandas_edgelist(df_edges, 'source', 'destination')
 pos = nx.fruchterman_reingold_layout(G)
@@ -50,7 +58,6 @@ json_str = """{
     {"key": "مالی", "image": "charttype.svg" },
     {"key": "مالی اسلامی", "image": "concept.svg" }
     
-  ]
-}"""
+  ]}"""
 
 _ = open('dataset.json', 'w', encoding='utf-8').write(str(json_str).replace("'", '"'))
