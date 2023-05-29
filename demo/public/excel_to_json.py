@@ -39,7 +39,7 @@ for key, position in pos.items():
                 dic['x']= list(position)[0]
                 dic['y']= list(position)[1]
                 dic['score']= G.degree()[key]
-                print(key)
+                #print(key)
         elif 'ابزارها' in key and 'ابزارها' in dic['key']:
             #print('[', "'", key, "'", ",", "'", dic['key'],"'", "]")
             pass
@@ -57,7 +57,11 @@ for i in zip(df_nodes['cluster'].values, df_nodes['tag'].values):
         clusters_key.append(str(i[0]))
 clusters = clusters[1:]
 
-
+tags = []
+for dic in nodes:
+    tags.append(dic['tag'])
+tags = list(set(tags))
+print(tags)
 
 json_str = """{
   "nodes": 
@@ -65,9 +69,15 @@ json_str = """{
   "edges": """ + str(edges) + """  ,
   "clusters": [ """+clusters+""" ],
   "tags": [
-    {"key": "مالی", "image": "charttype.svg" },
-    {"key": "مالی اسلامی", "image": "concept.svg" }
-    
+    {"key": "حسابداری و حسابرسی در بازار سرمایه اسلامی", "image": "hesabdari.svg" },
+    {"key": "مدیریت ریسک در بازار سرمایه اسلامی", "image": "risk.svg" },
+    {"key": "قوانین و مقررات در بازار سرمایه اسلامی", "image": "ghavanin.svg" },
+    {"key": "سایر", "image": "sayer.svg" },
+    {"key": "نهادهای مالی فعال در بازار سرمایه اسلامی", "image": "nahad.svg" }, 
+    {"key": "بازارهای مالی اسلامی", "image": "bazar.svg" },
+    {"key": "طبقه بندی بازار سرمایه اسلامی", "image": "tabaghebazar.svg" },
+    {"key": "مبانی، اصول و مفاهیم بازار سرمایه اسلامی", "image": "mabani.svg" },
+    {"key": "ابزارهای مالی اسلامی", "image": "abzar.svg" }
   ]}"""
 
 _ = open('dataset.json', 'w', encoding='utf-8').write(str(json_str).replace("'", '"'))
