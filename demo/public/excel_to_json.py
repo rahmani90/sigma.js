@@ -61,7 +61,6 @@ tags = []
 for dic in nodes:
     tags.append(dic['tag'])
 tags = list(set(tags))
-print(tags)
 
 json_str = """{
   "nodes": 
